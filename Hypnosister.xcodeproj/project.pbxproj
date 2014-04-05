@@ -19,6 +19,7 @@
 		3D68258818F0B48600528FBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D68257018F0B48500528FBC /* UIKit.framework */; };
 		3D68259018F0B48600528FBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D68258E18F0B48600528FBC /* InfoPlist.strings */; };
 		3D68259218F0B48600528FBC /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D68259118F0B48600528FBC /* HypnosisterTests.m */; };
+		3D68259D18F0B4B700528FBC /* BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D68259C18F0B4B700528FBC /* BNRHypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		3D68258D18F0B48600528FBC /* HypnosisterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HypnosisterTests-Info.plist"; sourceTree = "<group>"; };
 		3D68258F18F0B48600528FBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3D68259118F0B48600528FBC /* HypnosisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterTests.m; sourceTree = "<group>"; };
+		3D68259B18F0B4B700528FBC /* BNRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisView.h; sourceTree = "<group>"; };
+		3D68259C18F0B4B700528FBC /* BNRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		3D68256018F0B48500528FBC = {
 			isa = PBXGroup;
 			children = (
+				3D68259B18F0B4B700528FBC /* BNRHypnosisView.h */,
+				3D68259C18F0B4B700528FBC /* BNRHypnosisView.m */,
 				3D68257218F0B48500528FBC /* Hypnosister */,
 				3D68258B18F0B48600528FBC /* HypnosisterTests */,
 				3D68256B18F0B48500528FBC /* Frameworks */,
@@ -241,6 +246,7 @@
 			files = (
 				3D68257918F0B48500528FBC /* main.m in Sources */,
 				3D68257D18F0B48600528FBC /* BNRAppDelegate.m in Sources */,
+				3D68259D18F0B4B700528FBC /* BNRHypnosisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
