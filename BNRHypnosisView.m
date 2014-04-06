@@ -56,11 +56,23 @@
     //Draw the line
     [path stroke];
     
+    CGContextRef currentContext = UIGraphicsGetCurrentContext();
     
-    // Add image (bronze challenge
+    
+    
+    // Add image with shadow (gold challenge)
+    CGContextSaveGState(currentContext);
+    
+    CGSize shadowSize;
+    shadowSize.height = 3;
+    shadowSize.width = 3;
+    CGContextSetShadow(currentContext, shadowSize, 2);
+    
     UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
     CGRect imageRect = CGRectMake(bounds.size.width/4.0, bounds.size.height / 4.0, bounds.size.width/2.0, bounds.size.height/2.0);
     [logoImage drawInRect:imageRect];
+    
+    CGContextRestoreGState(currentContext);
 }
 
 
