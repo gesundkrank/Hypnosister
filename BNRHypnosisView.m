@@ -58,6 +58,45 @@
     
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
     
+    // Add gradient triangle (gold challenge)
+    CGContextSaveGState(currentContext);
+    UIBezierPath *trianglePath = [[UIBezierPath alloc] init];
+    
+    CGPoint triangleTop;
+    triangleTop.x = bounds.size.width / 2;
+    triangleTop.y = bounds.size.height / 4;
+    [trianglePath moveToPoint:triangleTop];
+    
+    CGPoint triangleBottomLeft;
+    triangleBottomLeft.x = bounds.size.width / 4;
+    triangleBottomLeft.y = bounds.size.height * 0.75;
+    [trianglePath addLineToPoint:triangleBottomLeft];
+    
+    CGPoint triangleBottomRight;
+    triangleBottomRight.x = bounds.size.width * 0.75;
+    triangleBottomRight.y = triangleBottomLeft.y;
+    [trianglePath addLineToPoint:triangleBottomRight];
+    
+    [trianglePath addLineToPoint:triangleTop];
+    
+    [trianglePath addClip];
+    
+    CGFloat locations[2] = { 0.0, 1.0 };
+    CGFloat components[8] = { 0.0, 1.0, 0.0, 1.0,
+        1.0, 1.0, 0.0, 1.0};
+    
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorspace, components, locations, 2);
+    
+    CGPoint endPoint;
+    endPoint.x = bounds.size.width / 2;
+    endPoint.y = bounds.size.height * 0.75;
+    
+    CGContextDrawLinearGradient(currentContext, gradient, triangleTop, endPoint, 0);
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorspace);
+    
+    CGContextRestoreGState(currentContext);
     
     
     // Add image with shadow (gold challenge)
