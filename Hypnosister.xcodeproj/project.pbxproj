@@ -20,6 +20,7 @@
 		3D68259018F0B48600528FBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D68258E18F0B48600528FBC /* InfoPlist.strings */; };
 		3D68259218F0B48600528FBC /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D68259118F0B48600528FBC /* HypnosisterTests.m */; };
 		3D68259D18F0B4B700528FBC /* BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D68259C18F0B4B700528FBC /* BNRHypnosisView.m */; };
+		3D68259F18F0C07900528FBC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D68259E18F0C07900528FBC /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3D68259118F0B48600528FBC /* HypnosisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterTests.m; sourceTree = "<group>"; };
 		3D68259B18F0B4B700528FBC /* BNRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisView.h; sourceTree = "<group>"; };
 		3D68259C18F0B4B700528FBC /* BNRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisView.m; sourceTree = "<group>"; };
+		3D68259E18F0C07900528FBC /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				3D68258B18F0B48600528FBC /* HypnosisterTests */,
 				3D68256B18F0B48500528FBC /* Frameworks */,
 				3D68256A18F0B48500528FBC /* Products */,
+				3D68259E18F0C07900528FBC /* logo.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,6 +229,7 @@
 			files = (
 				3D68257718F0B48500528FBC /* InfoPlist.strings in Resources */,
 				3D68257F18F0B48600528FBC /* Images.xcassets in Resources */,
+				3D68259F18F0C07900528FBC /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
