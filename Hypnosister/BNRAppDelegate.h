@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BNRAppDelegate : UIResponder <UIApplicationDelegate>
+@interface BNRAppDelegate : UIResponder <UIApplicationDelegate, UIScrollViewDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
